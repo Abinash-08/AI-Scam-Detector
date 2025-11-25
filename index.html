@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Scam Detector | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="home">
+  <header class="navbar">
+    <div class="nav-logo">AI<span>Shield</span></div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <section class="hero-content">
+      <h1>AI-Based <span>Fake Scholarship & Internship</span> Detector</h1>
+      <p class="hero-subtitle">
+        Stop falling for fake portals. Use AI + rule-based checks to verify scholarships, internships,
+        and government schemes before you apply.
+      </p>
+
+      <form id="scan-form" class="scan-card">
+        <label for="url-input">Enter the URL to check</label>
+        <div class="scan-input-group">
+          <input
+            type="url"
+            id="url-input"
+            placeholder="https://example-scholarship.com"
+            required
+          />
+          <button type="submit" class="primary-btn">Scan Now</button>
+        </div>
+
+        <p class="helper-text">
+          (Optional) Paste suspicious page content / description for deeper AI analysis:
+        </p>
+        <textarea
+          id="content-input"
+          rows="5"
+          placeholder="Paste the scholarship / internship / scheme description here..."
+        ></textarea>
+      </form>
+
+      <section class="quick-facts">
+        <h2>What does our detector check?</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>URL Reputation</h3>
+            <p>.gov / .edu / trusted domains vs risky TLDs like .xyz, .online, etc.</p>
+          </div>
+          <div class="feature-card">
+            <h3>AI Content Analysis</h3>
+            <p>Flags phrases like “100% guarantee”, “no eligibility”, “registration fee”.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Cross-Verification</h3>
+            <p>Compares against a small dataset of verified & known scam websites.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Scam Score (0–100)</h3>
+            <p>Shows a visual score & verdict: Verified, Suspicious, or Likely Fake.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <aside class="hero-side">
+      <div class="stat-card">
+        <h3>Live Demo Ready</h3>
+        <p>Type any URL and see instant AI-driven scam analysis.</p>
+      </div>
+      <div class="stat-card stat-card-accent">
+        <h3>Hackathon Focus</h3>
+        <p>Fully front-end prototype with simulated AI & rules — perfect for 1-day builds.</p>
+      </div>
+      <ul class="pill-list">
+        <li>Students</li>
+        <li>Parents</li>
+        <li>Job Seekers</li>
+        <li>Govt & NGOs</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>Built for Hackathons · AI + Web Security · Team Demo</p>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
