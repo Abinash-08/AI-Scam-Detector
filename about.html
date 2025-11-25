@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Scam Detector | About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="about">
+  <header class="navbar">
+    <div class="nav-logo">AI<span>Shield</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <section class="section">
+      <h1>About the Project</h1>
+      <p>
+        Every year, thousands of students and citizens are cheated by fake scholarships, scam internships,
+        and bogus government scheme portals. These websites steal personal data, charge fake registration fees,
+        and erode trust in genuine platforms.
+      </p>
+      <p>
+        Our solution, <strong>AIShield</strong>, is an AI-assisted scam detection system that combines
+        URL reputation checks, content analysis, and rule-based verification to estimate how risky an
+        opportunity link might be.
+      </p>
+    </section>
+
+    <section class="section two-column">
+      <div>
+        <h2>What We Do</h2>
+        <ul class="styled-list">
+          <li>Analyze domain structure, HTTPS usage, and risky TLDs.</li>
+          <li>Detect scammy language like “pay registration fee” or “no eligibility – 100% guaranteed”.</li>
+          <li>Cross-check against a small curated dataset of verified and known scam portals.</li>
+          <li>Generate a <strong>Scam Score (0–100)</strong> with a simple traffic-light verdict.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Hackathon Implementation</h2>
+        <p>
+          For this hackathon demo, we simulate the AI/NLP and database parts on the front-end using:
+        </p>
+        <ul class="styled-list">
+          <li>HTML, CSS, JavaScript-based dashboard</li>
+          <li>Rule-based heuristics for scam detection</li>
+          <li>A sample JSON dataset of known genuine and fake domains</li>
+          <li>Expandable design for Flask/FastAPI + real NLP later</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Future Work</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Real NLP Models</h3>
+          <p>Integrate BERT/RoBERTa to classify scam content more accurately.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Chrome Extension</h3>
+          <p>Show scam alerts directly while browsing any page.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Govt APIs</h3>
+          <p>Directly verify schemes against official databases.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Report Center</h3>
+          <p>Allow users to report new scam links to grow the dataset.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>AIShield · AI-Based Fake Scholarship & Internship Detector</p>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

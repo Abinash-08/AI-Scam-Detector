@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Scam Detector | Result</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="result">
+  <header class="navbar">
+    <div class="nav-logo">AI<span>Shield</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <section class="section result-header">
+      <div>
+        <h1>Scam Analysis Result</h1>
+        <p class="tiny-label">Scanned URL:</p>
+        <p id="url-display" class="url-display">Loading...</p>
+      </div>
+      <button class="ghost-btn" onclick="history.back()">← Scan Another URL</button>
+    </section>
+
+    <section class="section result-layout">
+      <div class="score-panel">
+        <div id="score-circle" class="score-circle">
+          <span id="score-value">--</span>
+          <span class="score-label">Scam Score</span>
+        </div>
+        <p id="score-verdict" class="score-verdict">Analyzing...</p>
+
+        <div class="legend">
+          <span class="legend-item"><span class="dot dot-safe"></span> 0–30: Verified / Low Risk</span>
+          <span class="legend-item"><span class="dot dot-warning"></span> 31–60: Suspicious</span>
+          <span class="legend-item"><span class="dot dot-danger"></span> 61–100: Likely Fake</span>
+        </div>
+      </div>
+
+      <div class="details-panel">
+        <h2>Why this score?</h2>
+        <div class="pill-row" id="url-tags">
+          <!-- URL flags injected here -->
+        </div>
+
+        <h3 class="subheading">AI Content Insights</h3>
+        <ul id="content-issues" class="styled-list compact-list">
+          <!-- Content issues injected here -->
+        </ul>
+
+        <h3 class="subheading">Overall Recommendation</h3>
+        <p id="recommendation" class="recommendation">
+          Please wait while we compute the recommendation...
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Prototype only. Always double-check with official government / college portals.</p>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
